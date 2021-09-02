@@ -10,7 +10,7 @@ protocol SomeProtocol {
 }
 ```
 
-Classes , structs, enums can adopt these protocols by placing protocol’s name after the type’s name, separated by a colon, as part of their definition. Multiple protocols can be listed, and are separated by commas:
+Classes, structs, enums can adopt these protocols by placing protocol’s name after the type’s name, separated by a colon, as part of their definition. Multiple protocols can be listed, and are separated by commas:
 
 ```swift
 struct SomeStructure: FirstProtocol, AnotherProtocol {
@@ -26,7 +26,7 @@ class SomeClass: SomeSuperclass, FirstProtocol, AnotherProtocol {
 }
 ```
 
-A good practice is to use an extension for your class focused on implementing the protocol's logic.
+A good practice is to use extensions dedicated to each protocol implementation.
 
 ```swift
 class ViewController: UIViewController {}
